@@ -390,6 +390,7 @@ a:hover {
 	/*background: #0066a6;*/
 	color: #808080;
 	padding: 56px 0;
+	line-height: 1.5;
 }
 
 .footer a {
@@ -445,11 +446,13 @@ a:hover {
 	padding: 16px 32px;
 	cursor: pointer;
 	border: 2px solid #ffb901;
+	font-weight: 700;
 }
 
-/*.newsletter-button:hover {
-	color: #ffb901;
-}*/
+.newsletter-button:hover {
+	background: #e6ad17;
+	border-color: #e6ad17;
+}
 
 
 .newsletter-input {
@@ -476,6 +479,11 @@ a:hover {
 	font-weight: 700;
 }
 
+.fb-btn:hover {
+	background: #2a4271;
+	text-decoration: none !important;
+}
+
 
 
 .whatsapp-btn {
@@ -488,6 +496,12 @@ a:hover {
 	margin-top: 16px;
 	font-weight: 700;
 	/*height: 48px;*/
+}
+
+.whatsapp-btn:hover {
+	background: #11ae09;
+	background: #18b553;
+	text-decoration: none !important;
 }
 
 .fb-btn img,
