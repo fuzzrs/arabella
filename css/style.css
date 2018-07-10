@@ -374,6 +374,21 @@ a:hover {
 	margin-bottom: 24px;
 }
 
+.blog-item .image-1 {
+	background: url('../images/jpg/blog/sobreposicao-1.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.blog-item .image-2 {
+	background: url('../images/jpg/blog/comodos-2.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.blog-item .image-3 {
+	background: url('../images/jpg/blog/pelego-3.jpg') center center no-repeat;
+	background-size: cover;
+}
+
 .blog-item .blog-text .title {
 	margin-bottom: 8px;
 }
