@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+a {
+	color: #ffb901;
+	/*color: #0000fe;*/
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+	height: inherit;
+}
+
+.flex-align {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: inherit;
+}
+
+.btn {
+	display: inline-block;
+	background: #ffb901;
+	color: #fff;
+	text-decoration: none;
+	padding: 4px 16px;
+}
+
+/* ============================================
+=========== Header Section ===========
+===============================================*/
+
+.topbar {
+	height: 48px;
+	width: 100%;
+	background: #0066a6;
+}
+
+.topbar-link {
+	margin-left: 24px;
+	text-decoration: none;
+}
+
+.topbar-link span,
+.topbar-link svg {
+	transition: all .3s ease;
+}
+
+.topbar-link:hover span {
+	color:  #ffb901;
+}
+
+.topbar-link svg {
+	fill: #fff;
+}
+
+.topbar-link:hover svg {
+	fill: #ffb901;
+}
+
+.topbar-link span {
+	margin-left: 8px;
+	color: #fff;
+	font-weight: 700;
+
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 4px;
+}
+
+.search-input {
+	border: none;
+	height: 24px;
+	padding-left: 8px;
+	width: 480px;
+}
+
+.search-button {
+	height: 24px;
+	width: 24px;
+	border: none;
+	background: #ffb901;
+	cursor: pointer;
+}
+
+.main-nav {
+	padding: 24px 0;
+	background: #fff;
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	/*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+	/*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
+}
+
+.main-nav-link {
+	color: #333;
+	text-decoration: none;
+	margin-left: 32px;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: uppercase;
+	transition: all .3s ease;
+}
+
+.main-nav-link:hover {
+	color: #0066a6;
+	border-bottom: 1px solid #0066a6;
+	padding-bottom: 2px;
+}
+
+.ofertas {
+	/*text-decoration: underline;*/
+	border-bottom: 1px solid #ffb901;
+	padding-bottom: 2px;
+	color: #ffb901;
+	transition: all .3s ease;
+}
+
+.hero-section {
+	background: url('../images/jpg/banner.jpeg') center center no-repeat;
+	width: 100%;
+	height: 68vh;
+}
+
+.customer-benefits {
+	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+	/*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
+	padding: 16px 0;
+	font-weight: 700;
+}
+
+.customer-benefits .benefit-item {
+	display: flex;
+	align-items: center;
+}
+
+.customer-benefits .benefit-item img {
+	margin-right: 8px;
+}
+
+/* ============================================
+=========== Content Section ===========
+===============================================*/
+
+.main-content {
+	margin-top: 68px;
+}
+
+.content-section {
+	padding: 72px 0;
+}
+
+.product-grid {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-fav {
+	/*display: none;*/
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: url('../images/icons/favorite-red.svg') center center no-repeat;
+	background-size: cover;
+	width: 24px;
+	height: 24px;
+	transition: all .3s ease;
+	transform: scale(0);
+}
+
+.product-item {
+	height: auto;
+	/*border: 1px solid;*/
+	position: relative;
+	/*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/	
+}
+
+.product-item:hover .product-fav {
+	display: block;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.product-item-image {
+	max-width: 280px;
+}
+
+.product-item-image img {
+	width: 100%;
+	height: auto;
+}
+
+.product-item-price {
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+.product-item-buttons .btn {
+	padding: 12px 32px;
+	margin-left: 24px;
+	font-weight: 700;
+}
+
+.banner-section {
+	height: 400px;
+	width: 100%;
+	background: url('../images/jpg/banner-2.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
