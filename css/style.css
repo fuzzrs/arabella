@@ -337,6 +337,9 @@ a:hover {
 	display: none;
 }
 
+.categories-section {
+	padding-bottom: 16px;
+}
 .categories-section .flex-align {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	/*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
@@ -391,6 +394,10 @@ a:hover {
 
 .blog-item .blog-text .title {
 	margin-bottom: 8px;
+}
+
+.blog-item .blog-text .text {
+	line-height: 1.4;
 }
 
 .newsletter-section {
