@@ -11,7 +11,15 @@
 	
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
 	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -95,9 +103,9 @@
 							<div class="product-item-image"><img src="images/jpg/branco-2-1.jpg" alt=""></div>
 							<div class="product-item-name">Tapete De Couro Arabella Quadriculado Branco 1,5x2m Placa 10cm</div>
 							<div class="product-item-price">
-							<span class="original-price">R$ 1.008,00</span>
-							<span class="promo-price">R$ 484,00</span>
-						</div>
+								<span class="original-price">R$ 1.008,00</span>
+								<span class="promo-price">R$ 484,00</span>
+							</div>
 						</a>
 						<div class="product-item-buttons">
 							<a href="#" class="link">Detalhes</a><a href="#" class="btn">Comprar</a>
@@ -109,9 +117,9 @@
 							<div class="product-item-image"><img src="images/jpg/inteiro-malhado-preto.jpg" alt=""></div>
 							<div class="product-item-name">Tapete De Couro De Boi Inteiro Malhado Preto E Branco</div>
 							<div class="product-item-price">
-							<span class="original-price">R$ 889,00</span>
-							<span class="promo-price">R$ 627,00</span>
-						</div>
+								<span class="original-price">R$ 889,00</span>
+								<span class="promo-price">R$ 627,00</span>
+							</div>
 						</a>
 						<div class="product-item-buttons">
 							<a href="#" class="link">Detalhes</a><a href="#" class="btn">Comprar</a>
@@ -252,7 +260,7 @@
 					</div>
 				</div>
 				
-				<p style="padding: 120px 0 32px; text-align: center; font-size: 32px">
+				<p style="padding: 120px 0 32px; text-align: left; font-size: 32px">
 					Aproveite as melhores ofertas! <a href="#">Ver Loja</a>
 				</p>
 			</div>
@@ -260,14 +268,30 @@
 
 		<div class="content-section review-section">
 			<div class="wrapper">
-				<div class="flex-align">
-					<div class="review-photo"></div>
-					<div class="review-text">
-						<p>
-							Chegou o tapete agora, perfeito, lindo e muito bom... Vou indicar à medida que minhas
-							amigas gostarem...
-						</p>
-						<span>Amelia Cunha - Belo Horizonte/MG</span>
+				<div class="review-slide">
+					<div class="review-item">
+						<div class="flex-align">
+							<div class="review-photo"></div>
+							<div class="review-text">
+								<p>
+									Chegou o tapete agora, perfeito, lindo e muito bom... Vou indicar à medida que minhas
+									amigas gostarem...
+								</p>
+								<span>Amelia Cunha - Belo Horizonte/MG</span>
+							</div>
+						</div>
+					</div>
+					<div class="review-item">
+						<div class="flex-align">
+							<div class="review-photo"></div>
+							<div class="review-text">
+								<p>
+									Chegou o tapete agora, perfeito, lindo e muito bom... Vou indicar à medida que minhas
+									amigas gostarem...
+								</p>
+								<span>Amelia Cunha - Belo Horizonte/MG</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -329,9 +353,9 @@
 					<h3>Contato</h3>
 					<p>Arabella Couros do Sul</p>
 					<ul>
-					<li><a href="tel:5432865099">(54) 3286-5099</a></li>
-					<li><a href="mailto:contato@arabella.com.br">contato@arabella.com.br</a></li>
-					<li>Av. Bela Vista, 37, Centro, Gramado/RS</li>
+						<li><a href="tel:5432865099">(54) 3286-5099</a></li>
+						<li><a href="mailto:contato@arabella.com.br">contato@arabella.com.br</a></li>
+						<li>Av. Bela Vista, 37, Centro, Gramado/RS</li>
 					</ul>
 					
 					<!-- <p>Lojas físicas</p>
@@ -386,7 +410,19 @@
 		</div>
 	</div>
 
+	<script>
+		// $('.review-slide').slick();
 
-
+		$(document).ready(function(){
+			$('.review-slide').slick({
+				infinite: true,
+				autoplay: true,
+				slidesToShow: 1,
+				arrows: true,
+				prevArrow: "prev",
+				nextArrow: 'next'
+			});
+		});
+	</script>
 </body>
 </html>
