@@ -227,7 +227,7 @@ a:hover {
 	position: absolute;
 	top: 8px;
 	right: 8px;
-	background: url('../images/icons/favorite-red.svg') center center no-repeat;
+	background: rgba(255,255,255, 1) url('../images/icons/favorite-red.svg') center center no-repeat;
 	background-size: cover;
 	width: 24px;
 	height: 24px;
@@ -445,7 +445,21 @@ a:hover {
 
 .review-section {
 	background: #f9f9f9;
-	padding: 148px 0;
+	/*padding: 148px 0;*/
+	padding: 72px 0;
+}
+
+.review-section .flex-align {
+	justify-content: space-around;
+	
+	max-width: 600px;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.review-section .review-photo {
+	margin-right: 16px;
 }
 
 .review-section p {
