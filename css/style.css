@@ -501,6 +501,33 @@ a:hover {
 	width: 320px;
 }
 
+.product-list-page .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-list {
+	display: grid;
+	/*grid-template-columns: 1fr 1fr 1fr;*/
+	grid-template-columns: auto auto auto;
+	grid-auto-rows: 1fr;
+	grid-row-gap: 100px;
+	margin-bottom: 96px;
+	align-items: stretch;
+}
+
+.product-list .product-item-buttons {
+	align-self: end;
+}
+
+.product-grid .product-item, 
+.product-list .product-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*background: lightgreen;*/
+}
+
 
 /* home 2 */
 .category-list .category-item {
