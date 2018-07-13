@@ -35,6 +35,7 @@ a {
 
 a:hover {
 	color: #ffb901;
+	text-decoration: none;
 }
 
 
@@ -413,6 +414,10 @@ a:hover {
 
 .newsletter-section {
 	background: #0066a6;
+	
+/*background: -webkit-linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));
+background: linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));*/
+
 }
 .newsletter-section .section-title {
 	color: #fbfbfb;
@@ -434,7 +439,7 @@ a:hover {
 .footer a:hover {
 	color: #333;
 	color: #0066a6;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .footer h3 {
@@ -581,4 +586,65 @@ a:hover {
 .fb-btn img,
 .whatsapp-btn img {
 	margin-right: 8px;
+}
+
+.sidebar-category-list li {
+	margin-bottom: 16px;
+}
+
+.sidebar-category-list li a {
+	font-size: 18px;
+}
+
+.page-list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 68px;
+}
+
+.page-list .list-item {
+	margin: 0 8px;
+	padding: 8px 16px;
+	background: lightgreen;
+}
+
+.page-list .list-item-link {
+	text-decoration: none;
+	display: block;
+	background: orange;
+}
+
+.page-list {
+
+}
+
+.breadcrumbs {
+	display: flex;
+}
+
+.breadcrumbs li {
+	margin: 0 8px;
+}
+
+.banner-section-top {
+	background: #0066a6;
+	height: 120px;
+	font-size: 38px;
+	color: #fff;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 68px auto;
+	padding: 16px 24px;
+}
+
+.sidebar-category-list a {
+	text-decoration: none;
+	color: #333;
+}
+
+.sidebar-category-list a:hover {
+	color: #0066a6;
+	background: #f8f8f8;
 }
