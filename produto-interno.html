@@ -55,7 +55,7 @@
 		<nav class="main-nav">
 			<div class="wrapper">
 				<div class="flex-align">
-					<a href="#" class="logo"><img src="images/png/logo.png" height="48" alt="ícone de uma arara e do lado direito está escrito Arabella, leather made in Gramado"></a>
+					<a href="index.html" class="logo"><img src="images/png/logo.png" height="48" alt="ícone de uma arara e do lado direito está escrito Arabella, leather made in Gramado"></a>
 					<ul class="main-nav-list">
 						<a href="index.html" class="main-nav-link">Início</a>
 						<a href="home.html" class="main-nav-link">A Empresa</a>
@@ -85,9 +85,10 @@
 		<div class="wrapper border-top">
 			<div class="page-content">
 				<ul class="breadcrumbs">
-					<li><a href="#">Início</a></li> >
-					<li><a href="#">Tapetes de couro</a></li> >
-					<li><a href="#">Tapetes sob medida</a></li>
+					<li><a href="index.html">Início</a></li> >
+					<li><a href="lista-produtos.html">Tapetes de couro</a></li> >
+					<li><a href="lista-produtos.html">Tapetes sob medida</a></li> >
+					<li><a href="#">Tapetes de couro de boi redondo mandala branco e marrom</a></li>
 				</ul>
 
 				<div class="product-page-content">
@@ -165,15 +166,17 @@
 					<b>Tamanho:</b> 1,2m diâmetro<br />
 					<b>Ref.:</b> BVR_
 				</p> -->
+				
 
 				<div class="product-page-price">
-					R$ 675,00
+					<div class="price-tag-promo">R$ 890,00</div>
+					<div class="price-tag">R$ 675,00 <span style="color: #39b54a; font-size: 18px; font-weight: 400">5% OFF</span></div>
 				</div>
 				<p style="font-size: 14px; margin-bottom: 24px">Em até 12x sem juros</p>
 				<div class="product-page-buttons">
 					<div class="flex-align">
-						<a href="#" class="btn">Adicionar ao carrinho</a>
-						<a href="#" class="btn">Comprar agora</a>
+						<a href="#" class="btn ghost-btn">Adicionar ao carrinho</a>
+						<a href="#" class="btn btn-2">Comprar agora</a>
 					</div>
 				</div>
 				<div class="product-page-icons">
@@ -190,6 +193,60 @@
 
 					<p style="margin-top: 24px; margin-bottom: 16px;">Boleto bancário</p>
 					<img src="images/jpg/boleto-bancario.jpg" width="72px" alt="">
+				</div>
+			</div>
+		</div>
+
+		<h2 style="margin-top: 96px;">Produtos Relacionados</h2>
+		<div class="product-grid" style="margin-bottom: 48px;">
+			<div class="product-item">
+				<a href="#" class="product-fav"></a>
+				<a href="produto-interno.html" class="product-description-url">
+					<div class="product-item-image"><img src="images/jpg/tapete-mandala-2.jpg" alt=""></div>
+					<div class="product-item-name">Tapete de Couro de boi mandala</div>
+					<div class="product-item-price">R$ 475,00</div>
+				</a>
+				<div class="product-item-buttons">
+					<a href="produto-interno.html" class="link">Detalhes</a><a href="#" class="btn">Comprar</a>
+				</div>
+			</div>
+			<div class="product-item">
+				<a href="#" class="product-fav"></a>
+				<a href="produto-interno.html" class="product-description-url">
+					<div class="product-item-image"><img src="images/jpg/branco-2-1.jpg" alt=""></div>
+					<div class="product-item-name">Tapete De Couro Arabella Quadriculado Branco 1,5x2m Placa 10cm</div>
+					<div class="product-item-price">
+						<span class="original-price">R$ 1.008,00</span>
+						<span class="promo-price">R$ 484,00</span>
+					</div>
+				</a>
+				<div class="product-item-buttons">
+					<a href="produto-interno.html" class="link">Detalhes</a><a href="#" class="btn">Comprar</a>
+				</div>
+			</div>
+			<div class="product-item">
+				<a href="#" class="product-fav"></a>
+				<a href="produto-interno.html" class="product-description-url">
+					<div class="product-item-image"><img src="images/jpg/inteiro-malhado-preto.jpg" alt=""></div>
+					<div class="product-item-name">Tapete De Couro De Boi Inteiro Malhado Preto E Branco</div>
+					<div class="product-item-price">
+						<span class="original-price">R$ 889,00</span>
+						<span class="promo-price">R$ 627,00</span>
+					</div>
+				</a>
+				<div class="product-item-buttons">
+					<a href="#" class="link">Detalhes</a><a href="#" class="btn">Comprar</a>
+				</div>
+			</div>
+			<div class="product-item">
+				<a href="#" class="product-fav"></a>
+				<a href="#" class="product-description-url">
+					<div class="product-item-image"><img src="images/jpg/tapetes-boi/tapete-de-couro-de-boi-cores.jpg" alt=""></div>
+					<div class="product-item-name">Tapete De Couro De Boi Caramelo E Branco</div>
+					<div class="product-item-price">R$ 275,00</div>
+				</a>
+				<div class="product-item-buttons">
+					<a href="#" class="link">Detalhes</a><a href="#" class="btn">Comprar</a>
 				</div>
 			</div>
 		</div>
@@ -310,6 +367,8 @@
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+document.getElementById("descricao").click();
 </script>
 </body>
 </html>
