@@ -746,6 +746,7 @@ background: linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));*/
 	max-width: 60%;
 	max-width: 600px;
 	max-width: 500px;
+	max-width: 576px;
 }
 
 .product-left-side h2 {
@@ -773,7 +774,7 @@ background: linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));*/
 	text-decoration: line-through;
 }
 .price-tag {
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 32px;
 }
 
