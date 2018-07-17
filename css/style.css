@@ -746,7 +746,7 @@ background: linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));*/
 	max-width: 60%;
 	max-width: 600px;
 	max-width: 500px;
-	max-width: 576px;
+	max-width: 576px;	
 }
 
 .product-left-side h2 {
@@ -797,9 +797,14 @@ background: linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));*/
 
 .tab {
 	overflow: hidden;
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	background: #f1f1f1;
+
+	display: flex;
+	justify-content: space-between;
 }
+
+
 
 .tab button {
     background-color: inherit;
@@ -824,5 +829,50 @@ background: linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));*/
     padding: 6px 12px;
     border: 1px solid #ccc;
     padding-top: 16px;
-    /*border-top: none;*/
+    border-top: none;
+}
+
+.tab button {
+	flex-grow: 1;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.tab button.active {
+	/*border-top: 3px solid #0066a6;*/
+    background-color: #fff;
+    border-bottom: none;
+    color: #0066a6;
+    position: relative;
+}
+
+.tab button.active::before {
+	content: "";
+	position: absolute;
+	border-top: 3px solid #0066a6;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.tab button.active:hover {
+	color: #333;
+}
+
+.sobre {
+	max-width: 780px;
+	margin: 0 auto;
+}
+
+.sobre p {
+	line-height: 1.8;
+}
+
+.sobre h1, .sobre h2 {
+	margin-top: 24px;
+}
+
+.sobre h1 + p,
+.sobre h2 + p {
+	margin-top: 16px;
 }
