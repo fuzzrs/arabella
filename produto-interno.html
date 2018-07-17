@@ -107,10 +107,10 @@
 
 							<div class="product-page-tabs">
 								<div class="tab">
-									<button class="tablinks" onclick="openCity(event, 'descricao')">Descrição</button>
+									<button id="defaultOpen" class="tablinks" onclick="openCity(event, 'descricao')">Descrição</button>
 									<button class="tablinks" onclick="openCity(event, 'garantia')">Garantia</button>
-									<button class="tablinks" onclick="openCity(event, 'London')">tab</button>
-									<button class="tablinks" onclick="openCity(event, 'London')">tab</button>
+									<button class="tablinks" onclick="openCity(event, 'tab')">tab</button>
+									<button class="tablinks" onclick="openCity(event, 'tab2')">tab</button>
 								</div>
 								<div id="descricao" class="tabcontent">
 									<h2>Tapete de Couro de boi Redondo</h2>
@@ -368,10 +368,12 @@
     evt.currentTarget.className += " active";
 }
 
- $(document).ready(function(){
-document.getElementById("descricao")[0].click();
-$('#descricao')[0].click()
- });
+document.getElementById("defaultOpen").click();
+
+//  $(document).ready(function(){
+// document.getElementById("descricao")[0].click();
+// $('#descricao')[0].click()
+//  });
 </script>
 </body>
 </html>
