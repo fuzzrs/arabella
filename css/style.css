@@ -235,6 +235,12 @@ a:hover {
 	margin-right: 8px;
 }
 
+.customer-benefits .benefit-icon {
+	font-size: 18px;
+	color: #0066a6;
+	margin-right: 8px;
+}
+
 /* ============================================
 =========== Content Section ===========
 ===============================================*/
@@ -502,6 +508,30 @@ background: linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));*/
 	align-items: flex-start;
 }
 
+.review-section .review-card {
+	background: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.08);
+	padding: 24px;
+	margin: 24px auto;
+	/*color: #fff46e;*/
+}
+
+.star-rating {
+	font-size: 13px;
+	color: #fff46e;
+	margin-bottom: 16px;
+}
+
+/*.review-item + .review-item {
+	margin-left: 24px;
+}*/
+
+.fa-quote-left,
+.fa-quote-right {
+	color: #333;
+	font-size: 14px;
+}
+
 .review-section .review-photo {
 	margin-right: 16px;
 }
@@ -511,8 +541,12 @@ background: linear-gradient(97deg, rgb(0, 102, 166), rgb(0, 0, 0));*/
 	margin-bottom: 8px;
 }
 
-.review-section span {
+.review-section .review-name {
 	font-weight: bold;
+}
+
+.review-section .review-city {
+	font-style: normal;
 }
 
 .newsletter-content {

@@ -11,6 +11,7 @@
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
@@ -75,9 +76,22 @@
 		<div class="customer-benefits">
 			<div class="wrapper">
 				<div class="flex-align">
-					<div class=benefit-item><img src="images/icons/shipment.svg" alt="">Frete grátis</div>
-					<div class=benefit-item><img src="images/icons/banknote.svg" alt="">12x sem juros</div>
-					<div class=benefit-item><img src="images/icons/certificate.svg" alt="">Garantia de 5 anos</div>
+					<div class=benefit-item>
+						<!-- <img src="images/icons/shipment.svg" alt=""> -->
+						<i class="fas fa-dolly benefit-icon" style="font-size: 20px"></i>
+						Frete grátis	
+					</div>
+					<div class=benefit-item>
+						<!-- <img src="images/icons/banknote.svg" alt=""> -->
+						<i class="fas fa-credit-card benefit-icon"></i>
+						12x sem juros
+					</div>
+					<div class=benefit-item>
+						<!-- <img src="images/icons/certificate.svg" alt=""> -->
+						<!-- <i class="fas fa-calendar-check" style="margin-right: 8px; color: #0066a6"></i> -->
+						<i class="far fa-calendar-check benefit-icon" style="font-size: 20px"></i>
+						Garantia de 5 anos
+					</div>
 				</div>
 			</div>
 		</div>
@@ -274,28 +288,88 @@
 			<div class="wrapper">
 				<div class="review-slide">
 					<div class="review-item">
-						<div class="flex-align">
+						<div class="flex-align review-card">
 							<div class="review-photo">
 								<img src="images/jpg/depoimentos/amelia-cunha.jpg" alt="">
 							</div>
 							<div class="review-text">
 								<p>
-									Chegou o tapete agora, perfeito, lindo e muito bom... Vou indicar à medida que minhas
-									amigas gostarem...
+									“Chegou o tapete agora, perfeito, lindo e muito bom... Vou indicar à medida que minhas
+									amigas gostarem...”
 								</p>
-								<span>Amelia Cunha<br/>Belo Horizonte/MG</span>
+								<div class="star-rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<span class="review-name">Amelia Cunha</span>
+								<p class="review-city">Belo Horizonte/MG</p>
 							</div>
 						</div>
 					</div>
 					<div class="review-item">
-						<div class="flex-align">
-							<div class="review-photo"></div>
+						<div class="flex-align review-card">
+							<div class="review-photo">
+								<img src="images/jpg/depoimentos/tatiana.jpg" alt="">
+							</div>
 							<div class="review-text">
 								<p>
-									Chegou o tapete agora, perfeito, lindo e muito bom... Vou indicar à medida que minhas
-									amigas gostarem...
+									“Amei, os tapetes são lindíssimos! Estou muito feliz e satisfeita com eles.”
 								</p>
-								<span>Amelia Cunha - Belo Horizonte/MG</span>
+								<div class="star-rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<span class="review-name">Tatiana</span>
+								<p class="review-city">São Paulo/SP</p>
+							</div>
+						</div>
+					</div>
+					<div class="review-item">
+						<div class="flex-align review-card">
+							<div class="review-photo">
+								<img src="images/jpg/depoimentos/larissa.jpg" alt="">
+							</div>
+							<div class="review-text">
+								<p>
+									“Chegou super rápido o tapete, eu nem esperava que fosse chegar tão rápido […] Nossa ele é perfeito, ameiii […] To super satisfeita”
+								</p>
+								<div class="star-rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<span class="review-name">Larissa</span>
+								<p class="review-city">Diadema/SP</p>
+							</div>
+						</div>
+					</div>
+					<div class="review-item">
+						<div class="flex-align review-card">
+							<div class="review-photo">
+								<img src="images/jpg/depoimentos/maria.jpg" alt="">
+							</div>
+							<div class="review-text">
+								<p>
+									“Queria agradecer imensamente, recebi o tapete e o lindo brinde! Amei!
+								     Ficou maravilhoso na minha sala, chegou direitinho, no prazo, amei tudo inclusive o atendimento”
+								</p>
+								<div class="star-rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+								<span class="review-name">Maria Lucia</span>
+								<p class="review-city">São Paulo/SP</p>
 							</div>
 						</div>
 					</div>
@@ -430,7 +504,7 @@
 		$(document).ready(function(){
 			$('.review-slide').slick({
 				infinite: true,
-				autoplay: true,
+				autoplay: false,
 				slidesToShow: 1,
 				arrows: true,
 				prevArrow: "prev",
